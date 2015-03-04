@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		C2DBDFAC1AA71A3800D013E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DBDFAB1AA71A3800D013E9 /* AppDelegate.swift */; };
-		C2DBDFAE1AA71A3800D013E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DBDFAD1AA71A3800D013E9 /* ViewController.swift */; };
 		C2DBDFB11AA71A3800D013E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DBDFAF1AA71A3800D013E9 /* Main.storyboard */; };
 		C2DBDFB31AA71A3800D013E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2DBDFB21AA71A3800D013E9 /* Images.xcassets */; };
 		C2DBDFB61AA71A3800D013E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2DBDFB41AA71A3800D013E9 /* LaunchScreen.xib */; };
 		C2DBDFC21AA71A3800D013E9 /* SlideOutNavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DBDFC11AA71A3800D013E9 /* SlideOutNavigationTests.swift */; };
+		C2DBDFCC1AA71AEB00D013E9 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DBDFCB1AA71AEB00D013E9 /* ContainerViewController.swift */; };
+		C2DBDFCE1AA71B4100D013E9 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DBDFCD1AA71B4100D013E9 /* CenterViewController.swift */; };
+		C2DBDFD01AA71B7100D013E9 /* SidePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DBDFCF1AA71B7100D013E9 /* SidePanelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		C2DBDFA61AA71A3800D013E9 /* SlideOutNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideOutNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DBDFAA1AA71A3800D013E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2DBDFAB1AA71A3800D013E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C2DBDFAD1AA71A3800D013E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C2DBDFB01AA71A3800D013E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2DBDFB21AA71A3800D013E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C2DBDFB51AA71A3800D013E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C2DBDFBB1AA71A3800D013E9 /* SlideOutNavigationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideOutNavigationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DBDFC01AA71A3800D013E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2DBDFC11AA71A3800D013E9 /* SlideOutNavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOutNavigationTests.swift; sourceTree = "<group>"; };
+		C2DBDFCB1AA71AEB00D013E9 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		C2DBDFCD1AA71B4100D013E9 /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CenterViewController.swift; path = ../CenterViewController.swift; sourceTree = "<group>"; };
+		C2DBDFCF1AA71B7100D013E9 /* SidePanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidePanelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				C2DBDFAB1AA71A3800D013E9 /* AppDelegate.swift */,
-				C2DBDFAD1AA71A3800D013E9 /* ViewController.swift */,
+				C2DBDFCD1AA71B4100D013E9 /* CenterViewController.swift */,
+				C2DBDFCB1AA71AEB00D013E9 /* ContainerViewController.swift */,
+				C2DBDFCF1AA71B7100D013E9 /* SidePanelViewController.swift */,
 				C2DBDFAF1AA71A3800D013E9 /* Main.storyboard */,
 				C2DBDFB21AA71A3800D013E9 /* Images.xcassets */,
 				C2DBDFB41AA71A3800D013E9 /* LaunchScreen.xib */,
@@ -212,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2DBDFAE1AA71A3800D013E9 /* ViewController.swift in Sources */,
+				C2DBDFD01AA71B7100D013E9 /* SidePanelViewController.swift in Sources */,
+				C2DBDFCE1AA71B4100D013E9 /* CenterViewController.swift in Sources */,
+				C2DBDFCC1AA71AEB00D013E9 /* ContainerViewController.swift in Sources */,
 				C2DBDFAC1AA71A3800D013E9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
